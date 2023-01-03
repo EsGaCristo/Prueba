@@ -1,0 +1,81 @@
+<!-- RESPECTO A LO SIGUIENTE, MODIFICA CADA ELEMENTO DE LOS LINKS A TU GUSTO
+AGREGADO OTRAS IMÁGENES, COLORES, ENLACES A OTRAS PÁGINAS WEB (REEDIRECCIONAR),
+OTRO CORREO ELECTRÓNICO-->
+
+<!--Un enlace no tiene que ser texto. ¡Un enlace puede ser una imagen o cualquier otro elemento HTML!
+El atributo más importante del elemento es el atributo href, que indica el destino del enlace.<a>
+El texto del enlace es la parte que será visible para el lector.
+La etiqueta HTML define un hipervínculo. Tiene la siguiente sintaxis:<a> -->
+        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6fXdAobpA1xtlExIodVViImllBJLPfE8qNA&usqp=CAU">Aquí va el texto que lee el cliente</a>
+
+
+<br> <br> <br> <br>
+<!-- El atributo puede tener uno de los siguientes valores:target
+
+    _self - Por defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic en él
+    _blank - Abre el documento en una nueva ventana o pestaña
+    _parent - Abre el documento en el marco padre
+    _top - Abre el documento en todo el cuerpo de la ventana -->
+        <a href="https://www.w3schools.com/" target="_blank">Visita W3Schools!</a>
+
+
+<br> <br>
+<!-- Para usar una imagen como enlace, simplemente coloque la etiqueta dentro de la etiqueta:<img><a> -->
+    <div align=" center">
+        <a href="https://adriw.com/wp-content/uploads/2020/02/Gato-chino9.jpg">
+            <img src="img/descarga.png" alt="HTML tutorial" style="width:150px;height:150px;">
+        </a>
+    </div>
+
+<br> <br> 
+<!-- Utilice dentro del atributo para crear un enlace que abra el programa de correo electrónico del usuario (para permitirle enviar un nuevo correo electrónico)-->
+    <a href="mailto:someone@example.com">Enviar un email</a>
+    
+    
+<br> <br>
+<!-- Para usar un botón HTML como enlace, debe agregar algo de código JavaScript.
+JavaScript le permite especificar lo que sucede en ciertos eventos, como un clic en un botón 
+alert('Te dije que NO hicieras Click'); 
+-->
+    <div align=" center">
+        <button type="button" onclick= "funcionButton()">BOTÓN HTML Tutorial</button>
+    </div>
+    <script>
+        function funcionButton(){
+            window.open("https://drive.google.com/file/d/1IK4te5uniggHgTSMfYLavk61nLZEpeiB/view?usp=sharing");
+        }
+    </script>
+
+<br> <br> <br> <br>
+<!-- Utilice una URL completa para enlazar a una página web -->
+    <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+
+
+<br> <br> <br> <br>
+<!-- Aquí, un enlace no visitado será verde sin subrayado. Un enlace visitado será de color rosa sin subrayado. Un enlace activo será amarillo y subrayado. Además, al pasar el ratón sobre un enlace (a:hover) se volverá rojo y subrayado -->
+    <style>
+        a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+        }
+
+        a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+
+        a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+    </style>
+
